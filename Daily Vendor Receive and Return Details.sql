@@ -18,7 +18,6 @@ join warehouse w on w.id=po.sourcingwarehouseid
 join vendor v on v.id=po.vendorid
 
 where po.completedon is not null
---and po.SourcingWarehouseId in (13,28,30,32)
 and po.CompletedOn>='2022-09-08 00:00 +06:00'
 and po.CompletedOn<'2022-09-10 00:00 +06:00'
 and t.costprice is not null
